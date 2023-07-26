@@ -53,7 +53,7 @@ def query(text):
     !这里暂时改为使用本地测试数据库
     """
     # client = QdrantClient("127.0.0.1", port=6333)
-    client=QdrantClient("../test.db")
+    client=QdrantClient(path="../test.db")
     collection_name = "data_collection"
     openai.api_key = os.getenv("OPENAI_API_KEY")
     sentence_embeddings = openai.Embedding.create(

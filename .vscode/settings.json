@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "qdrant_test",
+            "database": "${workspaceFolder:document.ai}/test.db/collection/data_collection/storage.sqlite"
+        }
+    ]
+}
