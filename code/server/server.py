@@ -50,8 +50,10 @@ def query(text):
     然后使用Qdrant的search API进行搜索，搜索结果中包含了向量和payload
     payload中包含了title和text，title是疾病的标题，text是摘要
     最后使用openai的ChatCompletion API进行对话生成
+    !这里暂时改为使用本地测试数据库
     """
-    client = QdrantClient("127.0.0.1", port=6333)
+    # client = QdrantClient("127.0.0.1", port=6333)
+    client=QdrantClient("../test.db")
     collection_name = "data_collection"
     openai.api_key = os.getenv("OPENAI_API_KEY")
     sentence_embeddings = openai.Embedding.create(

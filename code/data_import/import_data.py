@@ -5,7 +5,7 @@ import os
 import tqdm
 import openai
 
-
+#这里使用####来分割文本的两个部分 前一个部分是标题 后一个部分是正文 正文需要通过嵌入模型来获取文本的嵌入向量
 def to_embeddings(items):
     sentence_embeddings = openai.Embedding.create(
         model="text-embedding-ada-002",
@@ -15,7 +15,8 @@ def to_embeddings(items):
 
 
 if __name__ == '__main__':
-    client = QdrantClient("127.0.0.1", port=6333)
+    # client = QdrantClient("127.0.0.1", port=6333)
+    client=QdrantClient("../test.db")
     collection_name = "data_collection"
     openai.api_key = os.getenv("OPENAI_API_KEY")
     # 创建collection
