@@ -1,6 +1,7 @@
 @echo off
-echo æ‰§è¡Œåˆå§‹åŒ–æµç¨‹
-echo æ­£åœ¨å®‰è£…æœåŠ¡å™¨ä¾èµ–
+
+echo Ö´ĞĞ³õÊ¼»¯Á÷³Ì
+echo ÕıÔÚ°²×°·şÎñÆ÷ÒÀÀµ
 pip install -r server\requirements.txt
-echo æ­£åœ¨å®‰è£…æ•°æ®å¯¼å…¥å™¨ä¾èµ–
+echo ÕıÔÚ°²×°Êı¾İµ¼ÈëÆ÷ÒÀÀµ
 pip install -r data_import\requirements.txt
